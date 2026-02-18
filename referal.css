@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #0b1d3a;
+  --deep-blue: #142847;
+  --teal: #1a7a6d;
+  --teal-light: #2aa394;
+  --gold: #c8963e;
+  --gold-light: #e5b86a;
+  --cream: #faf6f0;
+  --warm-white: #fff9f2;
+  --text-dark: #1a1a1a;
+  --text-muted: #5a6b7f;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: #e8e0d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 60px;
+}
+
+.label {
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ══════════════════════════════════════════════════════════════
+ CARD 3: INVITACIÓN EXTENDIDA (para que reenvíen)
+ ══════════════════════════════════════════════════════════════ */
+.referral-card {
+  width: 480px;
+  background: var(--warm-white);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(11, 29, 58, 0.12);
+}
+
+.ref-header {
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  padding: 28px 32px;
+  text-align: center;
+}
+
+.ref-tag {
+  font-family: "Outfit", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.ref-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.ref-body {
+  padding: 24px 32px;
+}
+
+.ref-text {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.ref-text strong {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.ref-highlight {
+  background: var(--navy);
+  color: #fff;
+  padding: 20px 24px;
+  margin: 16px -32px;
+  text-align: center;
+}
+
+.ref-highlight p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.ref-cta {
+  display: block;
+  background: var(--gold);
+  color: var(--navy);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 14px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.ref-note {
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
