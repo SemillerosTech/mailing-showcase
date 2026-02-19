@@ -547,9 +547,12 @@
           <div
             style="
               background: #fff;
-              border: 1px solid #e8e0d5;
+              border: 1px solid transparent;
               padding: 18px 20px;
-              border-left: 3px solid #2aa394;
+              background:
+                linear-gradient(#ffffff, #ffffff) padding-box,
+                linear-gradient(90deg, #4285f4, #34a853, #fbbc05, #ea4335)
+                  border-box;
             "
           >
             <div
@@ -558,7 +561,7 @@
                 font-weight: 600;
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                color: #59aac0;
+                color: #5f6368;
                 margin: 0 0 6px 0;
               "
             >
@@ -569,16 +572,24 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 15px;
                 font-weight: 600;
-                color: #233567;
+                color: #202124;
                 line-height: 1.4;
+                display: flex;
+                align-items: center;
+                gap: 8px;
               "
             >
-              Google Meet
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg"
+                alt="Google Meet"
+                style="width: 18px; height: 18px; display: block"
+              />
+              <span>Google Meet</span>
               <small
                 style="
                   font-size: 12px;
                   font-weight: 400;
-                  color: #59aac0;
+                  color: #5f6368;
                   display: block;
                   margin-top: 2px;
                 "
@@ -588,11 +599,19 @@
           </div>
           <div
             style="
-              background: #fff;
-              border: 1px solid #e8e0d5;
-              padding: 18px 20px;
-              border-left: 3px solid #1a7a6d;
+              display: block;
+              width: 100%;
+              box-sizing: border-box;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 1.5rem;
+              font-weight: 600;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #233567;
+              background: rgba(35, 53, 103, 0.08);
+              padding: 6px 20px;
               grid-column: 1 / -1;
+              text-align: center;
             "
           >
             <div
@@ -600,8 +619,7 @@
                 font-size: 10px;
                 font-weight: 600;
                 letter-spacing: 2px;
-                text-transform: uppercase;
-                color: #59aac0;
+                color: #233567;
                 margin: 0 0 6px 0;
               "
             >
@@ -621,7 +639,7 @@
                 style="
                   font-size: 12px;
                   font-weight: 400;
-                  color: #59aac0;
+                  color: #233567;
                   display: block;
                   margin-top: 2px;
                 "
